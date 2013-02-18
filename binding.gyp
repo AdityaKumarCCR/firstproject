@@ -1,9 +1,11 @@
 {
-"targets": [
-{
-"target_name": "libpng",
-"sources": ["src/libpng.cc"],
-"libraries": ["<!(lpng15 --libs)", "<!(lz --libs)"],
+ "targets": [
+   {
+     "target_name": "hello",
+     "sources": ["src/libpng.cc"],
+     "include_dirs": ["/usr/include"],
+     "libraries": ["/usr/lib/libpng.so"]
+   }
+  ]
 }
-]
-}
+
